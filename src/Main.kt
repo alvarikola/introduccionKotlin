@@ -27,4 +27,14 @@ fun bucleFor() {
     }
 }
 
+// Listas
+fun ejemploLista() {
+    val frutasInmutable = listOf("manzana", "platano", "kiwi")  // Lista inmutable
+    println(frutas[0])
+    // frutas.add("pera")  // Esto da error porque es una lista inmutable
+
+    val frutasMutable = mutableListOf("manzana", "banana")  // Lista mutable
+    frutasMutable.add("kiwi")
+    println(frutasMutable)
+}
 
