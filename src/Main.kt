@@ -38,3 +38,15 @@ fun ejemploLista() {
     println(frutasMutable)
 }
 
+// Clases
+class Persona(val nombre: String, val edad: Int) {
+    fun saludar() {
+        println("Hola me llamo $nombre y tengo $edad años")
+    }
+}
+
+fun ejemploClase() {
+    val persona = Persona("Alvaro", 18)
+    persona.saludar()
+}
+
