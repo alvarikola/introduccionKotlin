@@ -50,3 +50,12 @@ fun ejemploClase() {
     persona.saludar()
 }
 
+// Data class
+data class Persona(val nombre: String, val edad: Int)
+
+fun ejemploDataClass() {
+    val persona1 = Persona("Alvaro", 18)
+    val persona2 = Persona("David", 19)
+    println(producto1)  
+    println(producto2)
+}
