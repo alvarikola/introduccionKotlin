@@ -59,3 +59,13 @@ fun ejemploDataClass() {
     println(producto1)  
     println(producto2)
 }
+
+// When
+fun ejemploWhen(dia: String) {
+    when (dia) {
+        "Lunes" -> println("Hoy es lunes")
+        "Martes" -> println("Hoy es martes")
+        "Miércoles" -> println("Hoy es miércoles")
+        else -> println("No se que día es")
+    }
+}
