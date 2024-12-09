@@ -8,6 +8,11 @@ fun main() {
     println("Entero: " + entero + "\n" + "String: " + str + "\n" + "Boolean: " + boolean + "\n" + "Double: " + double + "\n" + "Float: " + float)
     bucleFor()
     bucleWhile()
+    ejemploLista()
+    ejemploClase()
+    ejemploDataClass()
+    ejemploWhen("Lunes")
+    ejemploNullSafety()
 }
 
 //Bucle while
@@ -68,4 +73,16 @@ fun ejemploWhen(dia: String) {
         "Miércoles" -> println("Hoy es miércoles")
         else -> println("No se que día es")
     }
+}
+
+// NullSafety
+fun ejemploNullSafety() {
+    var nombre: String? = null  // Puede ser null
+    println(nombre?.length)  // Usamos el operador seguro ?. para evitar excepciones
+
+    nombre = "Carlos"
+    println(nombre?.length)  // Ahora imprime la longitud de la cadena "Carlos"
+
+    val longitud = nombre?.length ?: 0  // Si es null, asigna 0
+    println(longitud)  // Salida: 6
 }
